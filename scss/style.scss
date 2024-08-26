@@ -22,6 +22,17 @@ body {
     background-color: var(--white);
 }
 
+
+.wrapper-white {
+    position: relative;
+    z-index: 3;
+
+    background-color: var(--white);
+
+    border-radius: 52px;
+    margin-top: -100px;
+}
+
 .container {
     max-width: 1240px;
     margin: 0 auto;
@@ -411,17 +422,13 @@ body {
     color: var(--black);
 }
 .denial {
-    margin-top: -50px;
-    background-color: #fff;
-    border-radius: 52px;
     
-    
+   
     &__content {
         max-width: 762px;
     }
     &__container {
         display: flex;
-        background-color: #fff;
         padding: 75px;
         @media(max-width: 1030px) {
             flex-direction: column;
@@ -540,11 +547,6 @@ body {
 }
 
 .experience {
-    position: relative;
-    z-index: 2;
-    background-color: #fff;
-    border-bottom-left-radius: 52px;
-    border-bottom-right-radius: 52px;
     padding-top: 150px;
     &__container {
         display: flex;
@@ -733,10 +735,10 @@ body {
 }
 
 .work {
-    margin: -80px 0;
-    background-color: var(--white);
-    border-radius: 52px;
-    padding: 80px 0 160px;
+    padding: 80px 0 180px;
+    @media(max-width: 450px) {
+        padding-bottom: 140px;
+    }
 
     &__list {
         display: grid;
@@ -808,7 +810,7 @@ body {
 
 .benefit {
     padding-bottom: 140px;
-    &__container {
+    &__wrapper {
         background-color: var(--green);
         display: flex;
         flex: 1;
@@ -876,7 +878,7 @@ body {
     }
     &__block {
         width: 100%;
-        margin-top: 2px;
+        margin-top: -15px;
         & input {
             width: 100%;
             border: 2px solid var(--yellow);
@@ -897,10 +899,9 @@ body {
 }
 
 .questions {
-    border-radius: 52px;
     
     padding-bottom: 75px;
-    background-color: var(--white);
+    
     & .subtitle {
         max-width: 525px;
         margin-bottom: 15px;
