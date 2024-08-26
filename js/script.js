@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', ()=>{
     openMobMenu();
+    initialisingSwiper();
 });
 
 function openMobMenu(){
@@ -9,4 +10,12 @@ function openMobMenu(){
         burgerBtn.classList.toggle('active');
         mobMenu.classList.toggle('active');
     })
+}
+function initialisingSwiper() {
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        centeredSlides: true,
+
+      });
 }

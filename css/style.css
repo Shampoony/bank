@@ -639,4 +639,53 @@ p, a {
   grid-template-columns: repeat(6, 1fr);
   gap: 20px;
   margin-bottom: 180px;
+}
+@media (max-width: 1030px) {
+  .reviews .reviews__list {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+}
+.reviews .reviews__list-item img {
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 600px) {
+  .reviews .reviews__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.reviews__container {
+  padding: 0 10px;
+}
+.reviews__card {
+  width: 400px;
+  height: 300px !important;
+  border-radius: 10px;
+  padding: 25px 20px;
+  background-color: var(--white);
+}
+.reviews__card-info div *, .reviews__card-text {
+  color: var(--black);
+}
+.reviews__card-info {
+  display: flex;
+  gap: 10px;
+}
+.reviews__card-info img {
+  width: 70px;
+  height: 70px;
+}
+.reviews__card-name {
+  font-size: 16px;
+  font-weight: 600;
+}
+.reviews__card-position {
+  font-size: 12px;
+  font-weight: 400;
+}
+.reviews__card-text {
+  margin-top: 15px;
+  font-size: 16px;
 }/*# sourceMappingURL=style.css.map */
