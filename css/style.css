@@ -20,7 +20,7 @@ p, a {
 .container {
   max-width: 1240px;
   margin: 0 auto;
-  padding: 10px;
+  padding: 10px 0;
 }
 
 .title {
@@ -33,6 +33,7 @@ p, a {
 @media (max-width: 590px) {
   .title {
     font-size: 35px;
+    line-height: 40px;
   }
 }
 @media (max-width: 400px) {
@@ -323,23 +324,24 @@ p, a {
   z-index: 1;
   width: 319px;
   position: absolute;
-  top: 320px;
+  top: 280px;
 }
 @media (max-width: 780px) {
   .wellcome__btn {
-    top: 250px;
+    top: 200px;
   }
 }
 @media (max-width: 660px) {
   .wellcome__btn {
     width: 312px;
     height: 60px;
-    top: 335px;
+    top: 300px;
   }
 }
 @media (max-width: 410px) {
   .wellcome__btn {
-    top: 390px;
+    top: 350px;
+    width: 312px;
   }
 }
 .wellcome__light {
@@ -351,32 +353,32 @@ p, a {
 }
 .wellcome__graph {
   position: absolute;
-  top: 295px;
+  top: 255px;
   z-index: 0;
   width: 510px;
   height: 460px;
 }
 @media (max-width: 780px) {
   .wellcome__graph {
-    top: 235px;
+    top: 195px;
   }
 }
-@media (max-width: 620px) {
+@media (max-width: 660px) {
   .wellcome__graph {
-    top: 325px;
+    top: 290px;
     width: 400px;
   }
 }
 @media (max-width: 410px) {
   .wellcome__graph {
-    top: 410px;
+    top: 360px;
     width: 320px;
   }
 }
 .wellcome__phone {
   position: absolute;
   z-index: 1;
-  top: 400px;
+  top: 355px;
   box-shadow: 2px -33px 82px -35px rgb(255, 164, 1);
   border-radius: 55px;
 }
@@ -386,30 +388,31 @@ p, a {
 }
 @media (max-width: 780px) {
   .wellcome__phone {
-    top: 340px;
+    top: 295px;
   }
 }
-@media (max-width: 620px) {
+@media (max-width: 660px) {
   .wellcome__phone {
-    top: 420px;
+    top: 370px;
     width: 250px;
   }
 }
 @media (max-width: 410px) {
   .wellcome__phone {
-    top: 470px;
+    top: 425px;
     width: 200px;
   }
 }
 
 .main {
   position: relative;
+  color: var(--black);
 }
 
 .denial {
-  padding-top: 20px;
+  margin-top: -50px;
   background-color: #fff;
-  border-top-right-radius: 52px;
+  border-radius: 52px;
 }
 .denial__content {
   max-width: 762px;
@@ -444,6 +447,9 @@ p, a {
   z-index: 99;
 }
 
+.ways__container {
+  padding: 0 10px;
+}
 .ways__solutions {
   display: flex;
   gap: 20px;
@@ -531,4 +537,106 @@ p, a {
     width: 300px;
     height: 180px;
   }
+}
+
+.experience {
+  position: relative;
+  z-index: 2;
+  background-color: #fff;
+  border-bottom-left-radius: 52px;
+  border-bottom-right-radius: 52px;
+  padding-top: 150px;
+}
+.experience__container {
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+  border-radius: 10px;
+}
+@media (max-width: 1200px) {
+  .experience__container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.experience__image {
+  display: flex;
+  align-items: end;
+}
+.experience__image img {
+  width: 100%;
+  height: 100%;
+}
+.experience__image, .experience__content {
+  flex: 1;
+  width: 50%;
+}
+@media (max-width: 1200px) {
+  .experience__image, .experience__content {
+    width: 100%;
+  }
+}
+.experience__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+@media (max-width: 460px) {
+  .experience__list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.experience__card {
+  margin-top: 10px;
+  padding: 15px 10px;
+  width: 100%;
+  height: 165px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+}
+.experience__card:nth-child(1) {
+  background-image: url("../img/experience/bg-card1.png");
+}
+.experience__card:nth-child(2) {
+  background-image: url("../img/experience/bg-card2.jpg");
+}
+.experience__card:nth-child(3) {
+  background-image: url("../img/experience/bg-card3.jpg");
+}
+.experience__card:nth-child(4) {
+  background-image: url("../img/experience/bg-card4.jpg");
+}
+.experience__card-title {
+  font-size: 48px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+@media (max-width: 510px) {
+  .experience__card-title {
+    font-size: 38px;
+  }
+}
+.experience__card-subtitle {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.reviews {
+  margin-top: -40px;
+  padding-top: 150px;
+  background-color: var(--green);
+}
+.reviews .phrase {
+  color: rgba(var(--white), 0.41);
+  border-color: rgba(var(--white), 0.41);
+}
+.reviews .title {
+  color: var(--white);
+}
+.reviews .reviews__list {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+  margin-bottom: 180px;
 }/*# sourceMappingURL=style.css.map */

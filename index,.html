@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/swiper-bundle.min.css"> -->
     <title>Главная</title>
 </head>
 <body>
@@ -11,7 +12,7 @@
         <header class="header">
             <div class="header__container container">
                 <div class="header__logo">
-                    <img src="img/logo.png" alt="logo">
+                    <img src="img/logo.svg" alt="logo">
                 </div>
                 <nav class="header__nav menu">
                     <ul class="menu__list">
@@ -79,15 +80,13 @@
         </header>
         
         <main class="main">
-            <div class="round"></div>
-            <div class="round"></div>
             <section class="denial">
                 <div class="denial__container container">
                     <div class="denial__content">
                         <div class="phrase">Почему Вам отказали?</div>
-                        <h1 class="denial__title title">
+                        <h2 class="denial__title title">
                             Почему Вам отказали в кредите
-                        </h1>
+                        </h2>
                         <p class="denial__subtitle subtitle">
                             <span>Основная причина большинства случаев:</span>
                             В большинстве банков кредитные программы, по которым финансируют бизнес в России, заявлены лишь на сайте банка номинально и рассматриваются автоматическим скорингом. По факту выдач по таким программам нет.
@@ -103,7 +102,7 @@
                     <div class="phrase">
                         А как решить эту проблему?
                     </div>
-                    <div class="ways__title title">Какие есть пути решения у предпринимателя</div>
+                    <h2 class="ways__title title">Какие есть пути решения у предпринимателя</h2>
                     <div class="ways__solutions">
                         <div class="ways__solution">
                             <div class="ways__question">
@@ -129,8 +128,90 @@
                     </div>
                 </div>
             </section>
+            <section class="experience">
+                <div class="experience__container container">
+                    <div class="experience__image">
+                        <img src="img/expeience.jpg" alt="work">
+                    </div>
+                    <div class="experience__content">
+                        <div class="phrase">Почему мы можем помочь Вам?</div>
+                        <h2 class="experience_title title">
+                            Как давно мы помогаем нашим клиентам в кредитовании
+                        </h2>
+                        <p class="experience__subtitle subtitle">
+                            Мы занимаемся финансированием бизнеса в России с 2014 года и успешно помогаем предпринимателям согласовать необходимую сумму для развития их бизнеса.
+                        </p>
+                        <ul class="experience__list">
+                            <li class="experience__list-item experience__card">
+                                <h3 class="experience__card-title">4 млрд+</h3>
+                                <p class="experience__card-subtitle">Было привлечено рублей для финансирования бизнеса</p>
+                                
+                            </li>
+                            <li class="experience__list-item experience__card">
+                                <h3 class="experience__card-title">10 000+</h3>
+                                <p class="experience__card-subtitle">Компаний получили кредит и расширяют горизонты бизнеса</p>
+    
+                            </li>
+                            <li class="experience__list-item experience__card">
+                                <h3 class="experience__card-title">100++</h3>
+                                <p class="experience__card-subtitle">Счетов были реабилитированы из красных и желтых зон финмониторинга</p>
+    
+                            </li>
+                            <li class="experience__list-item experience__card">
+                                <h3 class="experience__card-title">7 000+</h3>
+                                <p class="experience__card-subtitle">Наших клиентов и партнёров остаются с нами и по сей день для дальнейшего процветания бизнеса</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="reviews">
+                <div class="reviews__container container">
+                    <div class="phrase">
+                        Наши банки-партнеры
+                    </div>
+                    <h2 class="reviews__title title">Наши генеральные партнеры:</h2>
+                    <ul class="reviews__list">
+                       <li class="reviews__list-item"><img src="img/reviews/bank1.png" alt=""></li>
+                       <li class="reviews__list-item"><img src="img/reviews/bank2.png" alt=""></li>
+                       <li class="reviews__list-item"><img src="img/reviews/bank3.png" alt=""></li>
+                       <li class="reviews__list-item"><img src="img/reviews/bank4.png" alt=""></li>
+                       <li class="reviews__list-item"><img src="img/reviews/bank5.png" alt=""></li>
+                       <li class="reviews__list-item"><img src="img/reviews/bank6.png" alt=""></li>
+                       <li class="reviews__list-item"><img src="img/reviews/bank7.png" alt=""></li>
+                       <li class="reviews__list-item"><img src="img/reviews/bank8.png" alt=""></li>
+                       <li class="reviews__list-item"><img src="img/reviews/bank9.png" alt=""></li>
+                       <li class="reviews__list-item"><img src="img/reviews/bank10.png" alt=""></li>
+                       <li class="reviews__list-item"><img src="img/reviews/bank11.png" alt=""></li>
+                       <li class="reviews__list-item"><img src="img/reviews/bank12.png" alt=""></li>
+                    </ul>
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide reviews__card">
+                                <div class="reviews__card-info">
+                                    <img src="img/reviews/People/alexey.jpg" alt="alexey">
+                                    <div>
+                                        <h4 class="reviews__card-name">
+                                            Алексей Бобров
+                                        </h4>
+                                        <h6 class="reviews__card-position">
+                                            Генеральный директор ООО “Финанс”
+                                        </h6>
+                                    </div>
+                                    <p class="reviews__card-text">
+                                        Началось все с того, что после одобрения первого кредита на ИП, были постоянные отказы на одобрение следующего. Очень трудно было понять почему и за что, так как сам в этом не разбираюсь. Специалисты помогли выявить проблему и одобрили мне кредит на необходимую сумму. Спасибо Полине за работу.
+                                    </p>
+                                    
+                                </div>                                
+                          </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                      </div>
+                </div>
+            </section>
         </main>
     </div>
     <script src="js/script.js"></script>
+   <!--  <script src="js/swiper-bundle.min.js"></script> -->
 </body>
 </html>
