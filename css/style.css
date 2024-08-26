@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url(../css/reset.css);
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
 :root {
@@ -108,6 +109,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 .header__contacts {
   z-index: 1;
@@ -118,6 +120,134 @@ body {
   }
 }
 
+.floating-logos {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* Логотипы не мешают взаимодействию с другими элементами */
+}
+
+.floating-logos img {
+  position: absolute;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.floating-logos img :nth-child(1) {
+  animation-name: move1;
+  animation-duration: 10s;
+}
+
+.floating-logos img :nth-child(2) {
+  right: 0;
+  animation-name: move2;
+  animation-duration: 12s;
+}
+
+.floating-logos img :nth-child(3) {
+  animation-name: move3;
+  animation-duration: 14s;
+}
+
+.floating-logos img :nth-child(4) {
+  animation-name: move4;
+  animation-duration: 16s;
+}
+
+.floating-logos img :nth-child(5) {
+  animation-name: move5;
+  animation-duration: 18s;
+}
+
+.floating-logos img :nth-child(6) {
+  animation-name: move6;
+  animation-duration: 20s;
+}
+
+.floating-logos img :nth-child(7) {
+  animation-name: move7;
+  animation-duration: 22s;
+}
+
+.floating-logos img :nth-child(8) {
+  animation-name: move8;
+  animation-duration: 24s;
+}
+
+.floating-logos img :nth-child(9) {
+  animation-name: move9;
+  animation-duration: 26s;
+}
+
+.floating-logos img :nth-child(10) {
+  animation-name: move10;
+  animation-duration: 28s;
+}
+
+.floating-logos img :nth-child(11) {
+  animation-name: move11;
+  animation-duration: 30s;
+}
+
+.floating-logos img :nth-child(12) {
+  animation-name: move12;
+  animation-duration: 32s;
+}
+
+@keyframes move1 {
+  0% {
+    transform: translate(0%, 0%);
+  }
+  25% {
+    transform: translate(80%, 20%);
+  }
+  50% {
+    transform: translate(40%, 80%);
+  }
+  75% {
+    transform: translate(20%, 40%);
+  }
+  100% {
+    transform: translate(0%, 0%);
+  }
+}
+@keyframes move2 {
+  0% {
+    transform: translate(10%, 10%);
+  }
+  25% {
+    transform: translate(70%, 30%);
+  }
+  50% {
+    transform: translate(20%, 90%);
+  }
+  75% {
+    transform: translate(10%, 30%);
+  }
+  100% {
+    transform: translate(10%, 10%);
+  }
+}
+@keyframes move3 {
+  0% {
+    transform: translate(20%, 20%);
+  }
+  25% {
+    transform: translate(60%, 40%);
+  }
+  50% {
+    transform: translate(80%, 60%);
+  }
+  75% {
+    transform: translate(30%, 70%);
+  }
+  100% {
+    transform: translate(20%, 20%);
+  }
+}
 .burger {
   display: none;
   z-index: 101;
@@ -428,7 +558,7 @@ body {
 }
 .denial__container {
   display: flex;
-  padding: 75px;
+  padding: 75px 0;
 }
 @media (max-width: 1030px) {
   .denial__container {
