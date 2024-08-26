@@ -125,7 +125,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 90%;
   pointer-events: none; /* Логотипы не мешают взаимодействию с другими элементами */
 }
 
@@ -136,116 +136,328 @@ body {
   animation-direction: alternate;
 }
 
-.floating-logos img :nth-child(1) {
+.floating-logos img:nth-child(1) {
   animation-name: move1;
   animation-duration: 10s;
 }
 
-.floating-logos img :nth-child(2) {
-  right: 0;
+.floating-logos img:nth-child(2) {
   animation-name: move2;
   animation-duration: 12s;
 }
 
-.floating-logos img :nth-child(3) {
+.floating-logos img:nth-child(3) {
   animation-name: move3;
   animation-duration: 14s;
 }
 
-.floating-logos img :nth-child(4) {
+.floating-logos img:nth-child(4) {
   animation-name: move4;
   animation-duration: 16s;
 }
 
-.floating-logos img :nth-child(5) {
+.floating-logos img:nth-child(5) {
   animation-name: move5;
   animation-duration: 18s;
 }
 
-.floating-logos img :nth-child(6) {
+.floating-logos img:nth-child(6) {
   animation-name: move6;
   animation-duration: 20s;
 }
 
-.floating-logos img :nth-child(7) {
+.floating-logos img:nth-child(7) {
   animation-name: move7;
   animation-duration: 22s;
 }
 
-.floating-logos img :nth-child(8) {
+.floating-logos img:nth-child(8) {
   animation-name: move8;
   animation-duration: 24s;
 }
 
-.floating-logos img :nth-child(9) {
+.floating-logos img:nth-child(9) {
   animation-name: move9;
   animation-duration: 26s;
 }
 
-.floating-logos img :nth-child(10) {
+.floating-logos img:nth-child(10) {
   animation-name: move10;
   animation-duration: 28s;
 }
 
-.floating-logos img :nth-child(11) {
+.floating-logos img:nth-child(11) {
   animation-name: move11;
   animation-duration: 30s;
 }
 
-.floating-logos img :nth-child(12) {
+.floating-logos img:nth-child(12) {
   animation-name: move12;
   animation-duration: 32s;
 }
 
 @keyframes move1 {
   0% {
-    transform: translate(0%, 0%);
+    left: 0%;
+    top: 0%;
   }
   25% {
-    transform: translate(80%, 20%);
+    left: 80%;
+    top: 20%;
   }
   50% {
-    transform: translate(40%, 80%);
+    left: 40%;
+    top: 80%;
   }
   75% {
-    transform: translate(20%, 40%);
+    left: 20%;
+    top: 40%;
   }
   100% {
-    transform: translate(0%, 0%);
+    left: 0%;
+    top: 0%;
   }
 }
 @keyframes move2 {
   0% {
-    transform: translate(10%, 10%);
+    left: 10%;
+    top: 10%;
   }
   25% {
-    transform: translate(70%, 30%);
+    left: 70%;
+    top: 30%;
   }
   50% {
-    transform: translate(20%, 90%);
+    left: 20%;
+    top: 90%;
   }
   75% {
-    transform: translate(10%, 30%);
+    left: 10%;
+    top: 30%;
   }
   100% {
-    transform: translate(10%, 10%);
+    left: 10%;
+    top: 10%;
   }
 }
 @keyframes move3 {
   0% {
-    transform: translate(20%, 20%);
+    left: 20%;
+    top: 20%;
   }
   25% {
-    transform: translate(60%, 40%);
+    left: 60%;
+    top: 40%;
   }
   50% {
-    transform: translate(80%, 60%);
+    left: 80%;
+    top: 60%;
   }
   75% {
-    transform: translate(30%, 70%);
+    left: 30%;
+    top: 70%;
   }
   100% {
-    transform: translate(20%, 20%);
+    left: 20%;
+    top: 20%;
+  }
+}
+@keyframes move4 {
+  0% {
+    left: 5%;
+    top: 5%;
+  }
+  25% {
+    left: 85%;
+    top: 15%;
+  }
+  50% {
+    left: 50%;
+    top: 85%;
+  }
+  75% {
+    left: 15%;
+    top: 50%;
+  }
+  100% {
+    left: 5%;
+    top: 5%;
+  }
+}
+@keyframes move5 {
+  0% {
+    left: 15%;
+    top: 15%;
+  }
+  25% {
+    left: 75%;
+    top: 25%;
+  }
+  50% {
+    left: 25%;
+    top: 75%;
+  }
+  75% {
+    left: 5%;
+    top: 25%;
+  }
+  100% {
+    left: 15%;
+    top: 15%;
+  }
+}
+@keyframes move6 {
+  0% {
+    left: 25%;
+    top: 25%;
+  }
+  25% {
+    left: 55%;
+    top: 45%;
+  }
+  50% {
+    left: 75%;
+    top: 55%;
+  }
+  75% {
+    left: 45%;
+    top: 65%;
+  }
+  100% {
+    left: 25%;
+    top: 25%;
+  }
+}
+@keyframes move7 {
+  0% {
+    left: 30%;
+    top: 10%;
+  }
+  25% {
+    left: 70%;
+    top: 30%;
+  }
+  50% {
+    left: 40%;
+    top: 80%;
+  }
+  75% {
+    left: 20%;
+    top: 50%;
+  }
+  100% {
+    left: 30%;
+    top: 10%;
+  }
+}
+@keyframes move8 {
+  0% {
+    left: 35%;
+    top: 35%;
+  }
+  25% {
+    left: 75%;
+    top: 45%;
+  }
+  50% {
+    left: 45%;
+    top: 85%;
+  }
+  75% {
+    left: 25%;
+    top: 55%;
+  }
+  100% {
+    left: 35%;
+    top: 35%;
+  }
+}
+@keyframes move9 {
+  0% {
+    left: 45%;
+    top: 5%;
+  }
+  25% {
+    left: 85%;
+    top: 25%;
+  }
+  50% {
+    left: 55%;
+    top: 75%;
+  }
+  75% {
+    left: 25%;
+    top: 45%;
+  }
+  100% {
+    left: 45%;
+    top: 5%;
+  }
+}
+@keyframes move10 {
+  0% {
+    left: 50%;
+    top: 10%;
+  }
+  25% {
+    left: 90%;
+    top: 30%;
+  }
+  50% {
+    left: 60%;
+    top: 80%;
+  }
+  75% {
+    left: 30%;
+    top: 50%;
+  }
+  100% {
+    left: 50%;
+    top: 10%;
+  }
+}
+@keyframes move11 {
+  0% {
+    left: 55%;
+    top: 20%;
+  }
+  25% {
+    left: 95%;
+    top: 40%;
+  }
+  50% {
+    left: 65%;
+    top: 90%;
+  }
+  75% {
+    left: 35%;
+    top: 60%;
+  }
+  100% {
+    left: 55%;
+    top: 20%;
+  }
+}
+@keyframes move12 {
+  0% {
+    left: 60%;
+    top: 15%;
+  }
+  25% {
+    left: 80%;
+    top: 35%;
+  }
+  50% {
+    left: 70%;
+    top: 85%;
+  }
+  75% {
+    left: 40%;
+    top: 55%;
+  }
+  100% {
+    left: 60%;
+    top: 15%;
   }
 }
 .burger {
@@ -424,6 +636,8 @@ body {
   flex-direction: column;
   align-items: center;
   position: relative;
+  height: 100%;
+  overflow: hidden;
 }
 .wellcome__title {
   color: var(--white);
@@ -558,7 +772,7 @@ body {
 }
 .denial__container {
   display: flex;
-  padding: 75px 0;
+  padding: 75px 10px;
 }
 @media (max-width: 1030px) {
   .denial__container {
@@ -681,6 +895,7 @@ body {
   display: flex;
   gap: 20px;
   border-radius: 10px;
+  padding: 20px;
 }
 @media (max-width: 1200px) {
   .experience__container {
