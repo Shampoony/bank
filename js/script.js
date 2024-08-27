@@ -12,27 +12,25 @@ function openMobMenu(){
     })
 }
 function initialisingSwiper() {
-    var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 2,
-        spaceBetween: 20,
-        centeredSlides: true,
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
         navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
           },
         breakpoints: {
-            300: {
-                slidesPerView: 1,
-            },
-            630: {
-                slidesPerView: 2
-            },
-            890: {
-                slidesPerView: 3
-            }
-            
-            
+        300: {
+            slidesPerView: 1,
         },
+        630: {
+            slidesPerView: 2
+        },
+        890: {
+            slidesPerView: 3
+        }
         
+        
+    },
       });
 }
