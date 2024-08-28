@@ -137,107 +137,209 @@ body {
 }
 
 .floating-logos img:nth-child(1) {
-  animation-name: move-right;
+  animation-name: move-right-1;
   animation-direction: normal;
   top: 5%;
   left: 0%;
 }
 
 .floating-logos img:nth-child(2) {
-  animation-name: move-right;
+  animation-name: move-right-2;
   animation-direction: normal;
   top: 15%;
-  left: 0%;
+  left: 15%;
 }
 
 .floating-logos img:nth-child(3) {
-  animation-name: move-right;
+  animation-name: move-right-3;
   animation-direction: normal;
   top: 25%;
-  left: 0%;
+  left: 10%;
 }
 
 .floating-logos img:nth-child(4) {
-  animation-name: move-right;
+  animation-name: move-right-4;
   animation-direction: normal;
   top: 35%;
-  left: 0%;
+  left: 20%;
 }
 
 .floating-logos img:nth-child(5) {
-  animation-name: move-right;
+  animation-name: move-right-5;
   animation-direction: normal;
   top: 45%;
-  left: 0%;
+  left: 5%;
 }
 
 .floating-logos img:nth-child(6) {
-  animation-name: move-left;
+  animation-name: move-left-1;
   animation-direction: normal;
   top: 20%;
-  left: 0%;
+  left: 85%;
 }
 
 .floating-logos img:nth-child(7) {
-  animation-name: move-left;
+  animation-name: move-left-2;
   animation-direction: normal;
   top: 30%;
-  left: 0%;
+  left: 80%;
 }
 
 .floating-logos img:nth-child(8) {
-  animation-name: move-left;
+  animation-name: move-left-3;
   animation-direction: normal;
   top: 40%;
-  left: 0%;
+  left: 90%;
 }
 
 .floating-logos img:nth-child(9) {
-  animation-name: move-left;
+  animation-name: move-left-4;
   animation-direction: normal;
   top: 50%;
-  left: 0%;
+  left: 70%;
 }
 
 .floating-logos img:nth-child(10) {
-  animation-name: move-left;
+  animation-name: move-left-5;
   animation-direction: normal;
   top: 60%;
-  left: 0%;
+  left: 75%;
 }
 
 .floating-logos img:nth-child(11) {
-  animation-name: move-right;
+  animation-name: move-right-6;
   animation-direction: normal;
   top: 50%;
-  left: 0%;
+  left: 15%;
 }
 
 .floating-logos img:nth-child(12) {
-  animation-name: move-right;
+  animation-name: move-right-7;
   animation-direction: normal;
   top: 60%;
-  left: 0%;
+  left: 10%;
 }
 
-@keyframes move-right {
+@keyframes move-right-1 {
   0% {
     left: 0%;
   }
   25% {
-    left: 50%;
+    left: 45%;
   }
   50% {
-    left: 90%;
+    left: 85%;
   }
   75% {
-    left: 50%;
+    left: 45%;
   }
   100% {
     left: 0%;
   }
 }
-@keyframes move-left {
+@keyframes move-right-2 {
+  0% {
+    left: 15%;
+  }
+  25% {
+    left: 60%;
+  }
+  50% {
+    left: 95%;
+  }
+  75% {
+    left: 60%;
+  }
+  100% {
+    left: 15%;
+  }
+}
+@keyframes move-right-3 {
+  0% {
+    left: 10%;
+  }
+  25% {
+    left: 55%;
+  }
+  50% {
+    left: 90%;
+  }
+  75% {
+    left: 55%;
+  }
+  100% {
+    left: 10%;
+  }
+}
+@keyframes move-right-4 {
+  0% {
+    left: 20%;
+  }
+  25% {
+    left: 65%;
+  }
+  50% {
+    left: 90%;
+  }
+  75% {
+    left: 65%;
+  }
+  100% {
+    left: 20%;
+  }
+}
+@keyframes move-right-5 {
+  0% {
+    left: 5%;
+  }
+  25% {
+    left: 50%;
+  }
+  50% {
+    left: 95%;
+  }
+  75% {
+    left: 50%;
+  }
+  100% {
+    left: 5%;
+  }
+}
+@keyframes move-left-1 {
+  0% {
+    left: 85%;
+  }
+  25% {
+    left: 40%;
+  }
+  50% {
+    left: 10%;
+  }
+  75% {
+    left: 40%;
+  }
+  100% {
+    left: 85%;
+  }
+}
+@keyframes move-left-2 {
+  0% {
+    left: 80%;
+  }
+  25% {
+    left: 35%;
+  }
+  50% {
+    left: 5%;
+  }
+  75% {
+    left: 35%;
+  }
+  100% {
+    left: 80%;
+  }
+}
+@keyframes move-left-3 {
   0% {
     left: 90%;
   }
@@ -245,13 +347,81 @@ body {
     left: 50%;
   }
   50% {
-    left: 0%;
+    left: 15%;
   }
   75% {
     left: 50%;
   }
   100% {
     left: 90%;
+  }
+}
+@keyframes move-left-4 {
+  0% {
+    left: 70%;
+  }
+  25% {
+    left: 30%;
+  }
+  50% {
+    left: 0%;
+  }
+  75% {
+    left: 30%;
+  }
+  100% {
+    left: 70%;
+  }
+}
+@keyframes move-left-5 {
+  0% {
+    left: 75%;
+  }
+  25% {
+    left: 35%;
+  }
+  50% {
+    left: 5%;
+  }
+  75% {
+    left: 35%;
+  }
+  100% {
+    left: 75%;
+  }
+}
+@keyframes move-right-6 {
+  0% {
+    left: 15%;
+  }
+  25% {
+    left: 55%;
+  }
+  50% {
+    left: 90%;
+  }
+  75% {
+    left: 55%;
+  }
+  100% {
+    left: 15%;
+  }
+}
+@keyframes move-right-7 {
+  0% {
+    left: 10%;
+  }
+  25% {
+    left: 50%;
+  }
+  50% {
+    left: 85%;
+  }
+  75% {
+    left: 50%;
+  }
+  100% {
+    left: 10%;
   }
 }
 .burger {
