@@ -700,6 +700,8 @@ body {
   position: absolute;
   z-index: 1;
   top: 331px;
+  width: 300px;
+  aspect-ratio: 319/350;
   box-shadow: 2px -33px 82px -35px rgb(255, 164, 1);
   border-radius: 55px;
 }
@@ -709,13 +711,13 @@ body {
 }
 @media (max-width: 780px) {
   .wellcome__phone {
-    top: 265px;
+    top: 280px;
   }
 }
 @media (max-width: 660px) {
   .wellcome__phone {
     top: 355px;
-    width: 220px;
+    width: 250px;
   }
 }
 @media (max-width: 470px) {
@@ -995,7 +997,7 @@ body {
   gap: 10px;
 }
 .reviews__card-info img {
-  width: 70px;
+  max-width: 70px;
   height: 70px;
 }
 .reviews__card-name {
