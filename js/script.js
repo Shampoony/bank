@@ -52,7 +52,7 @@ function initialisingSwiper() {
         document.getElementById('overpayment1').value =overpayment_value1;
  
         // Расчет переплаты по ставке брокера с учетом комиссии
-        let overpayment_value2 = parseInt(a * (d / 1200) / (1 - 1 / Math.pow(1 + d / 1200, b)) * b - a);
+        let overpayment_value2 = parseInt(a * (d / 1200) / (1 - 1 / Math.pow(1 + d / 1200, b)) * b - a + a*0.15);
         document.getElementById('overpayment2').value = overpayment_value2;
 
         // Расчет комиссии брокера
