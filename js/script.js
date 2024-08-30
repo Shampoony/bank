@@ -67,10 +67,11 @@ function initialisingSwiper() {
         inputs = document.querySelectorAll('input.benefit__input:not(.counted)');
         countedInputs = document.querySelectorAll('input.benefit__input.counted');
         countedInputs.forEach((input)=>{
-            if (!input.id != 'comission') {
-                input.value = '';
-            }
-            
-        })
+            input.value = '';
+        });
+        if (a) {
+            let commission_value = (a * 0.15);
+            document.getElementById('comission').value = parseInt(commission_value);
+        }
     }
 }
