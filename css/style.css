@@ -1217,7 +1217,7 @@ body {
 .benefit__input.counted::-moz-placeholder {
   color: #fff;
 }
-.benefit__input.counted::placeholder {
+.benefit__input.counted::placeholder, .benefit__input.counted {
   color: #fff;
 }
 .benefit__row {

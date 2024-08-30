@@ -1050,7 +1050,7 @@ body {
         
 
         padding: 10px;
-        &.counted::placeholder{
+        &.counted::placeholder, &.counted{
             color: #fff;
         }
     }
